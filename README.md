@@ -132,6 +132,8 @@ def printBookTriples():
 # Given a list,
 # Return a list of all possible combinations of animals
 
+** Hint. Getting all possible combinations is typical of this time complexity
+
 def getListOfAnimalCombos(1):
   list_length = len(l)
   if list_length == 0:
