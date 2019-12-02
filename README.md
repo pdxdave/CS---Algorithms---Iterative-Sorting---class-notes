@@ -183,3 +183,7 @@ So how do we count n items in constant time?
 Amortization.
 
 ```
+
+## Sorting
+
+#### Q: Why is sorting so important?  A: It's tied to searching
