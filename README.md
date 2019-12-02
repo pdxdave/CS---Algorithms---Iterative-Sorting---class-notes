@@ -218,3 +218,26 @@ list1.sort()
 key = int(input("Input a number to search for: "))
 binary_search(list1, key)
 ```
+
+### This is Insertion Sorting
+```
+def insertion_sort(list):
+    # starting at index 1 allows the sort to compare index 1 to 0,
+    # 0 being to its immediate left
+    for index in range(1, len(list)):
+       
+        value = list[index]
+        
+        i = index - 1
+        
+        while i >= 0:
+            if value < list[i]:
+                list[i+1] = list[i]
+                list[i] = value
+                i = i - 1
+            else:
+                break
+
+a = [2,7,3,9]
+insertion_sort(a)
+```
