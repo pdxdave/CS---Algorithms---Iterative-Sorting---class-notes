@@ -124,3 +124,43 @@ def printBookTriples():
         print(f"{animal1} - {animal2} - {animal3}")
 
 ```
+```
+######
+0(2^n)
+######
+
+# Given a list,
+# Return a list of all possible combinations of animals
+
+def getListOfAnimalCombos(1):
+  list_length = len(l)
+  if list_length == 0:
+    return [ [] ]
+  else:
+    animalCombos = []
+    previousCombos = getListofAnimalCombos(l[1:])
+    for combo in previousCombos:
+      animalCombos.append(combo)
+      animalCombos.append(combo + [l[0]] )
+    return animalCombos
+```
+```
+######
+0(n!)
+######
+
+# Given a list,
+# Return a list of all possible arrangements of list items
+
+def getAllArrangements(l):
+  list_length = getLengthOfList(l)
+  if list_length <= 1:
+    return [l]
+  else:
+    arrangements = []
+    previousArrangements = getAllArrangements(l[1:])
+    for previousArrangement in previousArrangements:
+      for i in range(getLengthOfList(previousArrangement) + 1)
+        arrangement.append(previousArrangement[1:] + [l[0]]....
+
+```
