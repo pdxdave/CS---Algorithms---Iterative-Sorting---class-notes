@@ -38,8 +38,10 @@ def getAnimals();
 ```
 animals = ['bird', 'cat', 'fish']
 
+
 O(n) means it takes an amount of time linear with the size of the set, 
-so a set twice the size will take twice the time.
+so a set twice the size will take twice the time. The input is size (n).  In this
+case three animals.
 
 ######
 0(n)
@@ -70,6 +72,19 @@ def hasAniaml(animal_name):
     if animal == animal_name:
       return True
   return False
+  
+  
+# Given the name of an animal
+# Return the animal's index if that animal is in the list, else -1
+
+def findAnimal(animal_name):
+  animal_index = 0
+  for animal in animals:
+    if animal == animal_name:
+      return animal_index
+    animal_index += 1
+  return -1
+
   
 
 ```
