@@ -43,6 +43,8 @@ O(n) means it takes an amount of time linear with the size of the set,
 so a set twice the size will take twice the time. The input is size (n).  In this
 case three animals.
 
+** For loop is a good indicator of an 0(n) operation
+
 ######
 0(n)
 ######
@@ -88,4 +90,37 @@ def findAnimal(animal_name):
   
 
 ```
+```
 
+An algorithm is said to run in logarithmic time if its time execution is proportional to the square of the input size. Examples: bubble sort, selection sort, insertion sort.
+
+** Notice two For loops
+
+######
+0(n^2)
+######
+
+# Print a list of all possible animal pairs
+
+def printAnimalPairs():
+  for animal in animals:
+    for animal2 in animals:
+      print(f"{animal} - {animal2}")
+
+```
+```
+######
+0(n^3)
+######
+
+** Notice the three For loops
+
+# Print a list of all possible animal triples
+
+def printBookTriples():
+  for animal in animals:
+    for anmial2 in animals:
+      for animal3 in animals:
+        print(f"{animal1} - {animal2} - {animal3}")
+
+```
