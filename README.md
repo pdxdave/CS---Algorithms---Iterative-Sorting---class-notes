@@ -166,3 +166,20 @@ def getAllArrangements(l):
         arrangement.append(previousArrangement[1:] + [l[0]]....
 
 ```
+#### How can these do the same thing, but with different time complexities?
+```
+# 0(n)
+def getLengthOfList(l):
+  list_length = 0
+  for i in l:
+    list_length += 1
+  return list_length
+  
+# 0(1)
+def betterGetLengthOfList(l):
+  return len(l)
+  
+So how do we count n items in constant time?
+Amortization.
+
+```
