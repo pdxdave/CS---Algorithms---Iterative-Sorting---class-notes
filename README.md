@@ -6,7 +6,7 @@ How does the performance of your code scale based on the size of your inputs?
 
 ```
 0(n!) 0(2^n)
-                0(n^2)
+                0(n^2) // like a double for loop
                       
                            
                            
