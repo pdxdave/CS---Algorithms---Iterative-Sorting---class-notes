@@ -14,7 +14,7 @@ How does the performance of your code scale based on the size of your inputs?
                            
                             
                             
-                              0(n)
+                              0(n) // like 1:1. One operation per nth item
                               
                               0(log n), 0(1)                 
 ```
