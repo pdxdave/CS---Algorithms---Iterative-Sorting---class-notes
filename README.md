@@ -19,6 +19,23 @@ How does the performance of your code scale based on the size of your inputs?
                               0(log n), 0(1)                 
 ```
 
+### Challenge question: Do a linear search usign Python
+```
+def search(numbers, searchFor):
+    for i in range(len(numbers)):
+        if searchFor == numbers[i]:
+            print("number is found")
+            break
+    else:
+        print("number is not found")
+
+
+numbers = [6,7,2,1,0,9,8]
+searchFor = 1
+search(numbers, searchFor)
+
+```
+
 ```
 animals = ['bird', 'cat', 'fish']
 
