@@ -16,7 +16,7 @@ How does the performance of your code scale based on the size of your inputs?
                             
                               0(n) // like 1:1. One operation per nth item
                               
-                              0(log n), 0(1)                 
+                              0(log n), 0(1) // if steps get halfed w/each interation that's logarithmic                
 ```
 
 ### Challenge question: Do a linear search usign Python
