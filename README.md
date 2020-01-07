@@ -212,6 +212,8 @@ TIME COMPLEXITY: 0(log n)
 
 This is the divide and conquer approach and is dependent upon the list being sorted.  It works like this. Once the low and high point of the list are identified, the list will be divided.  This is done by adding the low(int 0) and high(int 17) together, then dividing the result.  This creates a starting point for the search.  So in this case, the mid point is integer 8, which would be the value 23.  The first pass will see if the number input by the user is exactly the right number.  If not, it will see if the number input is less than the midpoint.  If so, then it drops all the numbers right of the midpoint.  If not, it drops all of the numbers left of the midpoint.  In this case, let's go with the former (all of the numbers to the right are dropped) as the key I entered is 7.  Now the low and high point are reset. The low int is 0, and the high int is 7.  Once again, they will be added, then divided to find the middle point.  The middle point is now three, and once again it is checking to see if the key I entered is associated with an int larger than 3.
 ```
+2log(n)
+
 def binary_search(list1, key):
     low = 0
     high = len(list1) -1
