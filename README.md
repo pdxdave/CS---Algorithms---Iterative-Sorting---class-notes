@@ -240,6 +240,8 @@ binary_search(list1, key)
 
 ### This is Insertion Sorting
 ```
+0(n^2)  // We have two loops.  A 'for' and a 'while'. 
+
 def insertion_sort(list):
     # starting at index 1 allows the sort to compare index 1 to 0,
     # 0 being to its immediate left
